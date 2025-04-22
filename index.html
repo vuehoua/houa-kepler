@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Houa's Portfolio</title>
-		<link rel="stylesheet" href="css/index.css"> 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Houa's Portfolio</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<body>
-		<section id="Intro"> 
-			<h1 class="newsreader-heading">Houa</h1>
-		</section>
-		
-		<section id="About">
-			<h2>About</h2>
-			<p class="newsreader-paragraph">
-				Hello, paragraph here...
-			</p>
-		</section>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Connect">Connect</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<section id="Experience">
-			<h2>Experience</h2>
-			<ul>
-				<li>Web Designer</li>
-				<li>Digital Director</li>
-				<li>Tech Support</li>
-			</ul>
-		</section>
+    <section id="Intro">
+      <h1 class="newsreader-heading">Houa</h1>
+    </section>
 
-		<section id="Connect">
-			<h2>Connect</h2>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/in/houavue/">
-						<img src="linkedin-logo.png" alt="linkedin logo" class="social-icon">
-					</a>
-					&nbsp;
-					<a href="https://github.com/vuehoua">
-						<img src="github-logo.png" alt="github logo" class="social-icon">
-					</a>
-				</li>
-			</ul>
-		</section>
+    <section id="About">
+      <h2>About</h2>
+      <p class="newsreader-paragraph">Hello, paragraph here...</p>
+    </section>
 
-	</body>
+    <section id="Experience">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3 class="job-title">Web Designer</h3>
+          <span class="job-dates">2023 - Present</span>
+        </div>
+        <p class="job-description">job description goes here...</p>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3 class="job-title">Digital Director</h3>
+          <span class="job-dates">2021 - 2022</span>
+        </div>
+        <p class="job-description">job description goes here...</p>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3 class="job-title">Technical Support</h3>
+          <span class="job-dates">2020 - 2021</span>
+        </div>
+        <p class="job-description">job description goes here...</p>
+      </div>
+    </section>
+
+    <section id="Skills">
+      <!-- In later weeks we'll use JavaScript to insert a list of your skills -->
+      <h2>Skills</h2>
+    </section>
+    <section id="Projects">
+      <!-- you will be adding your GitHub Projects via API call to this empty section using JavaScript later in this course. -->
+      <h2>Projects</h2>
+      <ul></ul>
+    </section>
+
+    <section id="Connect">
+      <h2>Connect</h2>
+      <div class="connect-links">
+        <a href="https://www.linkedin.com/in/houavue" target="_blank">
+          <img src="linkedin-logo.png" alt="LinkedIn" class="social-icon" />
+        </a>
+        <a href="https://www.github.com/vuehoua" target="_blank">
+          <img src="github-logo.png" alt="GitHub" class="social-icon" />
+        </a>
+      </div>
+    </section>
+  </body>
 </html>
