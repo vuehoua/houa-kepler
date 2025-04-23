@@ -1,3 +1,16 @@
+header {
+  position: sticky;
+  top: 0;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 0;
+}
+
 body {
   background-color: #e8e4dc;
   color: #151c26;
@@ -43,25 +56,59 @@ h2 {
   font-weight: 400;
 }
 
-#Experience ul {
-  list-style: none; /* Removes bullets */
-  padding: 0;
+#Experience {
+  padding: 2rem 1rem;
 }
 
-#Experience li {
-  padding: 15px 20px;
-  margin-bottom: 5px;
+.experience-item {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
 }
 
-#Connect ul {
-  list-style: none;
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.job-dates {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.job-description {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+#Connect {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .social-icon {
   width: 20px;
-  height: auto;
+  height: 20px;
+  transition: transform 0.3s ease;
 }
 
-a {
-  text-decoration: none;
+.social-icon:hover {
+  transform: scale(1.2);
 }
