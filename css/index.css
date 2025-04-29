@@ -37,12 +37,19 @@ section {
   font-weight: 400;
   font-style: normal;
 } */
-
 #Connect {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 h1 {
@@ -90,18 +97,10 @@ h2 {
   color: #444;
 }
 
-#Connect {
+/* #Connect {
   padding: 2rem 1rem;
   text-align: center;
-}
-
-.connect-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
+} */
 
 .social-icon {
   width: 20px;
@@ -111,4 +110,58 @@ h2 {
 
 .social-icon:hover {
   transform: scale(1.2);
+}
+
+/* Mobile Styles */
+@media (max-width: 599px) {
+  /* Change header for intro, h1  */
+  .newsreader-heading {
+    font-family: "Newsreader", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /* Change headers, h2 */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Change Job titles */
+  .job-title {
+    font-size: 1rem;
+  }
+
+  .job-dates {
+    font-size: 0.65rem;
+    color: #555;
+  }
+
+  /* Change Job descriptions */
+  .job-description {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+  /* Change headers, h2 */
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  /* Change Job titles */
+  .job-title {
+    font-size: 1rem;
+  }
+
+  .job-dates {
+    font-size: 0.75rem;
+    color: #555;
+  }
+
+  /* Change Job descriptions */
+  .job-description {
+    font-size: 0.85rem;
+  }
 }
