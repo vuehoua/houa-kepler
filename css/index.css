@@ -112,6 +112,19 @@ h2 {
   transform: scale(1.2);
 }
 
+#Skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+#Skills li {
+  padding: 0.5rem 1rem;
+}
+
 /* Mobile Styles */
 @media (max-width: 599px) {
   /* Change header for intro, h1  */
@@ -141,6 +154,11 @@ h2 {
   .job-description {
     font-size: 0.85rem;
   }
+
+  #Skills li {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
 }
 
 /* Tablet Styles */
@@ -163,5 +181,9 @@ h2 {
   /* Change Job descriptions */
   .job-description {
     font-size: 0.85rem;
+  }
+
+  #Skills li {
+    font-size: 1rem;
   }
 }
