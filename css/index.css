@@ -12,7 +12,7 @@ header {
 }
 
 body {
-  background-color: #e8e4dc;
+  background-color: ;
   color: #151c26;
   margin: 0;
   padding: 0;
@@ -123,6 +123,21 @@ h2 {
 
 #Skills li {
   padding: 0.5rem 1rem;
+}
+
+form[name="leave_message"] label {
+  display: block;
+  margin-top: 0.75em;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+form[name="leave_message"] button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  color: #151c26;
+  border: none;
 }
 
 /* Mobile Styles */
