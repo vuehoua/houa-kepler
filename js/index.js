@@ -1,3 +1,49 @@
+//github username
+const githubUsername = "vuehoua";
+
+//create fetch request
+fetch(`https://api.github.com/users/${githubUsername}/repos`)
+  //convert the response to json
+  .then((response) => response.json())
+
+  //json data
+  .then((data) => {
+    const repositories = data;
+    console.log(repositories); //log the repositories to the console
+  })
+
+  //errors
+  .catch((error) => {
+    console.error("Error fetching data:", error);
+  });
+
+//Listing my Github Projects using API
+const projectSection = document.getElementById("Projects");
+const projectList = projectSection.querySelector("#projectList");
+
+fetch(`https://api.github.com/users/${githubUsername}/repos`)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("HTTP error! Status: ${response.status}");
+    }
+    return response.json();
+  })
+  .then((data) => {
+    const repositories = data;
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error("Error fetching repositories:", error);
+    const errorMsg = document.createElement("p");
+    errorMsg.textContent = "Failed to load projects. Please try again.";
+    projectSection.appendChild(errorMsg);
+  });
+
 //footer element
 const newFooter = document.createElement("footer");
 
