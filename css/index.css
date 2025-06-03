@@ -125,6 +125,15 @@ h2 {
   padding: 0.5rem 1rem;
 }
 
+/* Projects section  */
+#projectList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 form[name="leave_message"] label {
   display: block;
   margin-top: 0.75em;
@@ -173,6 +182,11 @@ form[name="leave_message"] button[type="submit"] {
   #Skills li {
     font-size: 0.85rem;
     padding: 0.5rem;
+  }
+
+  #projectList {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
 
