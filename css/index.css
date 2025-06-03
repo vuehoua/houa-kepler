@@ -151,6 +151,11 @@ form[name="leave_message"] button[type="submit"] {
 
 /* Mobile Styles */
 @media (max-width: 599px) {
+  /* Change font size for nav bar to fit mobile */
+  .main-nav ul {
+    font-size: 0.75rem;
+  }
+
   /* Change header for intro, h1  */
   .newsreader-heading {
     font-family: "Newsreader", serif;
