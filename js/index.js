@@ -1,22 +1,6 @@
 //github username
 const githubUsername = "vuehoua";
 
-//create fetch request
-fetch(`https://api.github.com/users/${githubUsername}/repos`)
-  //convert the response to json
-  .then((response) => response.json())
-
-  //json data
-  .then((data) => {
-    const repositories = data;
-    console.log(repositories); //log the repositories to the console
-  })
-
-  //errors
-  .catch((error) => {
-    console.error("Error fetching data:", error);
-  });
-
 //Listing my Github Projects using API
 const projectSection = document.getElementById("Projects");
 const projectList = projectSection.querySelector("#projectList");
